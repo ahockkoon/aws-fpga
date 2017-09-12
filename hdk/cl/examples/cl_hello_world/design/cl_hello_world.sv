@@ -278,8 +278,8 @@ always_ff @(posedge clk_main_a0)
       hello_world_q[31:0] <= hello_world_q[31:0];
    end
 
-assign hello_world_q_byte_swapped[31:0] = {hello_world_q[7:0],   hello_world_q[15:8],
-                                           hello_world_q[23:16], hello_world_q[31:24]};
+assign hello_world_q_byte_swapped[31:0] = {hello_world_q[7:0],   hello_world_q[7:0],
+                                           hello_world_q[7:0], hello_world_q[7:0]};
 
 //-------------------------------------------------
 // Virtual LED Register
